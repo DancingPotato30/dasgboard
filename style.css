@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 
-*{
-    font-family: 'Noto Sans', sans-serif;
+:root{
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     height: 100vh;
     display: flex;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 img{
@@ -30,15 +37,103 @@ img{
     padding: 20px;
 }
 
-.top{
+.sidebar .top{
     font-size: 3rem;
     font-weight: bolder;
 }
 
-.middle, .bottom{
+.sidebar .middle, .sidebar .bottom{
     font-size: 1.5rem;
     font-weight: 700;
 }
 
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    border: solid;
+    padding: 15px;
+}
+
+.search{
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search > img{
+    width: 30px;
+}
+
+.search > input{
+    border-radius: 60px;
+    border: none;
+    background-color: rgb(189, 189, 189);
+    flex-grow: 0;
+    height: 25px;
+    width: 70%;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 30px;
+    font-weight: 600;
+}
+
+.logo{
+    border: solid;
+    border-radius: 50%;
+}
+
+.head > .logo{
+    width: 50px;
+}
+
+.welcome{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.welcome > .logo{
+    width: 80px;
+}
+
+.welcome > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    font-weight: bold;
+}
+
+.hello{
+    font-size: 16px;
+}
+
+.buttonscontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonscontainer > button{
+    background-color: orange;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    width: 130px;
+}
 
 
+.maincontent{
+    flex-grow: 1;
+}
