@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     display: flex;
 }
 
@@ -34,7 +34,7 @@ img{
 .sidebar{
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 53, 53);
+    background-color: rgb(250, 38, 38);
     gap: 70px;
     padding: 20px;
     height: 110vh;
@@ -177,6 +177,9 @@ img{
     font-size: 20px;
     justify-content: space-between;
     text-overflow: ellipsis;
+    border-radius: 10px;
+    border-left: orange solid;
+    border-width: thick;
 }
 
 .card > label{
@@ -242,6 +245,7 @@ Change size of banana and remove its border, and work on Trendings section lol
 .trending{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .trending > .cardcontainer{
@@ -255,6 +259,7 @@ Change size of banana and remove its border, and work on Trendings section lol
 .trendingcards{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .trendingcards > img{
@@ -272,4 +277,8 @@ Change size of banana and remove its border, and work on Trendings section lol
 .text > label{
     color: black;
     font-size: 1rem;
+}
+
+.trending > .cardcontainer, .announcements > .cardcontainer, .card{
+    box-shadow: 0px 10px 10px -10px grey;
 }
